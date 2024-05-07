@@ -1,0 +1,90 @@
+{
+  "name": "@deuscx/starter-vue-component",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@8.11.0",
+  "description": "A simple starter template to build component library for vue3",
+  "author": "deuscx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deuscx/starter-vue-component"
+  },
+  "bugs": "https://github.com/deuscx/starter-vue-component/issues",
+  "keywords": [
+    "starter",
+    "vue3",
+    "component",
+    "ui"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite ",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "postinstall": "npx simple-git-hooks"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.6.1",
+    "vue": "^3.3.9"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.1.2",
+    "@types/node": "^20.10.1",
+    "@unocss/eslint-config": "^0.57.7",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitest/coverage-c8": "^0.33.0",
+    "@vue/test-utils": "^2.4.3",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.54.0",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^15.1.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.2",
+    "unocss": "^0.57.7",
+    "unplugin-auto-import": "^0.17.1",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^5.0.4",
+    "vitest": "^0.34.6",
+    "vue-tsc": "^1.8.24"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

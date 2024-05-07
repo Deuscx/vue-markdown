@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component.vue > should render 1`] = `"<div>10 <button class=\\"inc btn\\"> + </button><button class=\\"dec btn\\"> - </button></div>"`;
+
+exports[`component.vue > should render 1`] = `"<div>10 <button class=\\"inc btn\\"> + </button><button class=\\"dec btn\\"> - </button></div>"`;
