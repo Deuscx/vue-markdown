@@ -59,6 +59,15 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.6.1",
+    "ant-design-vue": "^4.2.1",
+    "deepmerge": "^4.3.1",
+    "hast-util-to-jsx-runtime": "^2.3.0",
+    "html-url-attributes": "^3.0.0",
+    "property-information": "^6.5.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.0.0",
     "vue": "^3.3.9"
   },
   "devDependencies": {

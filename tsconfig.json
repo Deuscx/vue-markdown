@@ -3,10 +3,9 @@
     "target": "es2016",
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
-    "useDefineForClassFields": true,
     "baseUrl": ".",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "paths": {
       "~/*": ["src/*"]
     },
@@ -18,15 +17,9 @@
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
-    "declaration": true,
-    "outDir": "dist/types",
-    "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
     "skipLibCheck": true
   },
-  "outDir": "dist/types",
-  "include": ["src", "./shims.d.ts", "./auto-imports.d.ts"],
   "exclude": ["dist", "node_modules", "eslint.config.js"]
 }
