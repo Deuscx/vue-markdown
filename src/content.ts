@@ -26,6 +26,7 @@ an example | *an example* | **an example**
 
 <video
   poster="https://gw.alipayobjects.com/zos/kitchen/sLO%24gbrQtp/lobe-chat.webp"
+  controls
   src="https://github.com/lobehub/lobe-chat/assets/28616219/f29475a3-f346-4196-a435-41a6373ab9e2"/>
 
 ---
@@ -94,6 +95,11 @@ $$
 $$
 \\int_{a}^{b} f(x) \\, dx
 $$
+
+![](https://gw.alipayobjects.com/zos/kitchen/8Ab%24hLJ5ur/cover.webp)
+
+https://gw.alipayobjects.com/zos/kitchen/8Ab%24hLJ5ur/cover.webp
+
 `
 
 export const content2 = `# Customize Markdown Components
@@ -156,4 +162,8 @@ export function foo() {
   console.warn('Warning') // [!code warning]
 }
 \`\`\`
+
+<script> alert(1) <\/script>
+
+
 `
