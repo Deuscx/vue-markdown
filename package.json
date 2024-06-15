@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/deuscx/vue-markdown"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": "https://github.com/deuscx/vue-markdown/issues",
   "keywords": [
     "starter",
