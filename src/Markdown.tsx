@@ -65,6 +65,8 @@ export default defineComponent({
         return acc
       }, {})
 
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
     function jsx(type, props, key) {
       const { children } = props
       delete props.children

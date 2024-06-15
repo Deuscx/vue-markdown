@@ -3,24 +3,26 @@
     "target": "esnext",
     "jsx": "preserve",
     "lib": ["esnext", "DOM"],
+    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "node",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "vue-markdown": [
+        "../src/index.ts"
+      ]
+    },
     "resolveJsonModule": true,
-    "allowJs": true,
+    "types": [
+      "vite/client"
+    ],
     "strict": true,
     "strictNullChecks": true,
-    "declaration": true,
-    "outDir": "dist",
+    "declaration": false,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
-  },
-  "exclude": [
-    "dist",
-    "playground",
-    "cypress",
-    "eslint.config.js",
-    "test",
-    "vite.config.ts"
-  ]
+  }
 }

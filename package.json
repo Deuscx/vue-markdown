@@ -1,5 +1,5 @@
 {
-  "name": "@deuscx/starter-vue-component",
+  "name": "@deuscx/vue-markdown",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@8.11.0",
@@ -8,9 +8,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deuscx/starter-vue-component"
+    "url": "https://github.com/deuscx/vue-markdown"
   },
-  "bugs": "https://github.com/deuscx/starter-vue-component/issues",
+  "bugs": "https://github.com/deuscx/vue-markdown/issues",
   "keywords": [
     "starter",
     "vue3",
@@ -30,36 +30,28 @@
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/types/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
+  "types": "./index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite ",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
-    "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
-    "postinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks",
+    "play": "vite playground --open",
+    "play:build": "vite build playground"
   },
   "peerDependencies": {
     "vue": "^3.3.4"
   },
   "dependencies": {
     "@vueuse/core": "^10.6.1",
-    "ant-design-vue": "^4.2.1",
     "deepmerge": "^4.3.1",
     "hast-util-to-jsx-runtime": "^2.3.0",
     "html-url-attributes": "^3.0.0",

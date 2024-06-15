@@ -1,14 +1,14 @@
 
-# starter-vue-component
+# vue-markdown
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/deuscx/starter-vue-component">
+  <a href="https://github.com/deuscx/vue-markdown">
     <!-- <img src="" alt="Logo" width="80" height="80"-->
   </a>
 
-  <h3 align="center">starter-vue-component</h3>
+  <h3 align="center">vue-markdown</h3>
 
   <p align="center">
     a brief description
@@ -36,7 +36,7 @@ link to demo or gif link-->
 ## Installation
 
 ```bash
-pnpm install starter-vue-component
+pnpm install vue-markdown
 ```
 
 
@@ -47,8 +47,7 @@ pnpm install starter-vue-component
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 ```ts
-import StarterVueComponent from 'starter-vue-component'
-import 'starter-vue-component/dist/index.css'
+import StarterVueComponent from 'vue-markdown'
 ```
 
 
@@ -59,7 +58,7 @@ import 'starter-vue-component/dist/index.css'
 - [ ] Add back to top links
 
 
-See the [open issues](https://github.com/deuscx/starter-vue-component/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/deuscx/vue-markdown/issues) for a full list of proposed features (and known issues).
 
 <!-- LICENSE -->
 ## License
@@ -67,13 +66,13 @@ See the [open issues](https://github.com/deuscx/starter-vue-component/issues) fo
 Distributed under the MIT License. See [LICENSE]('./LICENSE') for more information.
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/deuscx/starter-vue-component.svg?style=for-the-badge
-[contributors-url]: https://github.com/deuscx/starter-vue-component/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/deuscx/starter-vue-component.svg?style=for-the-badge
-[forks-url]: https://github.com/deuscx/starter-vue-component/network/members
-[stars-shield]: https://img.shields.io/github/stars/deuscx/starter-vue-component.svg?style=for-the-badge
-[stars-url]: https://github.com/deuscx/starter-vue-component/stargazers
-[issues-shield]: https://img.shields.io/github/issues/deuscx/starter-vue-component.svg?style=for-the-badge
-[issues-url]: https://github.com/deuscx/starter-vue-component/issues
-[license-shield]: https://img.shields.io/github/license/deuscx/starter-vue-component?style=for-the-badge
-[license-url]: https://github.com/deuscx/starter-vue-component/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/deuscx/vue-markdown.svg?style=for-the-badge
+[contributors-url]: https://github.com/deuscx/vue-markdown/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/deuscx/vue-markdown.svg?style=for-the-badge
+[forks-url]: https://github.com/deuscx/vue-markdown/network/members
+[stars-shield]: https://img.shields.io/github/stars/deuscx/vue-markdown.svg?style=for-the-badge
+[stars-url]: https://github.com/deuscx/vue-markdown/stargazers
+[issues-shield]: https://img.shields.io/github/issues/deuscx/vue-markdown.svg?style=for-the-badge
+[issues-url]: https://github.com/deuscx/vue-markdown/issues
+[license-shield]: https://img.shields.io/github/license/deuscx/vue-markdown?style=for-the-badge
+[license-url]: https://github.com/deuscx/vue-markdown/blob/master/LICENSE

@@ -1,5 +1,3 @@
-import Component from './Component.vue'
-import 'uno.css'
+import Markdown from './Markdown'
 
-export default Component
-export * from './Component.vue'
+export default Markdown

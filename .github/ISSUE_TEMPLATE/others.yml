@@ -1,6 +1,6 @@
 name: Others
 
-description: Create an issue for starter-vue-component
+description: Create an issue for vue-markdown
 
 body:
   - type: textarea

@@ -2,7 +2,7 @@
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import rehypeSanitize from 'rehype-sanitize'
-import Markdown from './Markdown'
+import Markdown from 'react-markdown'
 import Code from './Code.vue'
 import { content } from './content'
 
