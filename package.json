@@ -1,7 +1,7 @@
 {
   "name": "@deuscx/vue-markdown",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.11.0",
   "description": "A simple starter template to build component library for vue3",
   "author": "deuscx",
