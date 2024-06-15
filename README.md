@@ -11,7 +11,7 @@
   <h3 align="center">vue-markdown</h3>
 
   <p align="center">
-    a brief description
+    A markdown component for Vue.js
   </p>
 </div>
 
@@ -26,9 +26,9 @@
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Markdown component for Vue.js. easy to use and customize.
 
+[demo](https://vue-markdown-playground.vercel.app/)
 <!-- ## Try it Online
 
 link to demo or gif link-->
@@ -36,7 +36,7 @@ link to demo or gif link-->
 ## Installation
 
 ```bash
-pnpm install vue-markdown
+pnpm install @deuscx/vue-markdown
 ```
 
 
@@ -46,19 +46,72 @@ pnpm install vue-markdown
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-```ts
-import StarterVueComponent from 'vue-markdown'
+```vue
+<script lang="ts" setup>
+import { ref } from 'vue'
+import VueMarkdown from '@deuscx/vue-markdown'
+const markdown = ref('# Hello World')
+</script>
+
+<template>
+  <div>
+    <VueMarkdown :content="markdown" />
+  </div>
+</template>
 ```
 
+### Custom Component
+By default, the component will render the markdown as a native element. You can customize the component by passing a custom component as a slot.
 
-<!-- ROADMAP -->
-## Roadmap
+For Example:
 
-- [x] Add Changelog
-- [ ] Add back to top links
+You can use the `AImage` component to render images in markdown.
+```vue
+<template>
+  <div>
+    <VueMarkdown :content="markdown">
+      <template #img="{ src }">
+        <AImage :src="src" :width="360" />
+      </template>
+    </VueMarkdown>
+  </div>
+</template>
+```
 
+### Custom Plugins
+You can add custom plugins to the markdown component by passing them as a prop.
+
+For Example:
+you can add rehypePlugin and remarkPlugin to the markdown component.
+
+```vue
+<script lang="ts" setup>
+import { ref } from 'vue'
+import VueMarkdown from '@deuscx/vue-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
+
+const markdown = ref('# Hello World')
+</script>
+
+<template>
+  <div>
+    <VueMarkdown
+      :content="markdown"
+      :rehype-plugins="[rehypeRaw]"
+      :remark-plugins="[remarkGfm]"
+    />
+  </div>
+</template>
+```
 
 See the [open issues](https://github.com/deuscx/vue-markdown/issues) for a full list of proposed features (and known issues).
+
+
+## Credits
+
+- [React Markdown](https://github.com/remarkjs/react-markdown)
+
 
 <!-- LICENSE -->
 ## License
