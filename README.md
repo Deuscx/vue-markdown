@@ -32,6 +32,7 @@ Markdown component for Vue.js. easy to use and customize.
 <!-- ## Try it Online
 
 link to demo or gif link-->
+![image](https://github.com/Deuscx/vue-markdown/assets/48537979/38c2775c-f423-4c57-9a1b-452210233be2)
 
 ## Installation
 
