@@ -15,25 +15,20 @@
   },
   "bugs": "https://github.com/deuscx/vue-markdown/issues",
   "keywords": [
-    "starter",
-    "vue3",
-    "component",
-    "ui"
+    "vue",
+    "markdown",
+    "vue-markdown"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.umd.js"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     },
     "./*": "./*"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
