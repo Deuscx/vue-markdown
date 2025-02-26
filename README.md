@@ -117,7 +117,7 @@ See the [open issues](https://github.com/deuscx/vue-markdown/issues) for a full 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE]('./LICENSE') for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/deuscx/vue-markdown.svg?style=for-the-badge
